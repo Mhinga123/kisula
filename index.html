@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUGANDO HOSPITAL</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="loginPage" class="login-box">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+      </div>
+      
+      <div id="website" class="hidden">
+    
+    <table width="100%">
+        <tr>
+            <td colspan="5"><img src="img/1.jpeg" class="img-box"></td>
+        </tr>
+        <tr>
+            
+            <td class="btn"><center><a href="index.html">Home</a></td>
+            <td class="btn"><center><a href="about.html">About</a></td>
+            <td class="btn"><center><a href="service.html">service</a></td>
+            <td class="btn"><center><a href="contact.html">Contact</a></td>
+            <td class="btn"><center><a href="help.html">Help</a></td>
+        </center>
+        </tr>
+    </table>
+    <table border="0px" width="100%" id="tt">
+     
+        <tr>
+            <td colspan="2" class="td2">
+                <h1>BUGANDO HOSPITAL</h1>
+                <img src="img/1.jpeg" class="img-boxx">
+                
+                <h2>A hospital is a healthcare institution that provides medical<br> care and <br>treatment to patients who are sick or injured. <br>It offers a range of services, including emergency care,<br> surgery, and specialized treatments, 
+                    <br>with the goal of improving patients' health and well-being</h2>
+                
+                
+
+            </td>
+            <td colspan="3" class="ss">
+                <h1>Register</h1>
+               
+                <label>FullName</label><br>
+                <input type="text" name="name" placeholder="Enter Name"><br>
+                <label>Phone Number</label><br>
+                <input type="number" name="phone" placeholder="Enter phone Nmber"><br>
+                <label>Email</label><br>
+                <input type="Email" name="Email"placeholder="Enter Email"><br>
+                <label>password</label><br>
+                <input type="password" name="password" placeholder="Enter password"><br>
+                <button class="btnn"><a href="">Register</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="im">
+                <h1>reseption</h1>
+                 <img src="img/3.jpeg" class="imm">
+            </td>
+            <td class="im">
+                <h1>emergency Room</h1>
+                <img src="img/4.jfif" class="imm">
+            </td>
+            <td class="im">
+            <h1>Doctor Room</h1>
+            <img src="img/2.jpeg" class="imm">
+            </td>
+            <td class="im">
+                <h1>parent Room</h1>
+                <img src="img/5.jfif" class="imm">
+            </td>
+            <td class="im"><h1>chidren Room</h1>
+                <img src="img/6.jfif" class="imm"></td>
+        </tr>
+
+    </table>
+    </div>
+    <script>
+        function login() {
+          const user = document.getElementById("username").value;
+          const pass = document.getElementById("password").value;
+      
+          // Simple fixed login for demo
+          if (user === "kisula" && pass === "1234") {
+            document.getElementById("loginPage").style.display = "none";
+            document.getElementById("website").classList.remove("hidden");
+          } else {
+            alert("Invalid username or password!");
+          }
+        }
+      </script>
+</body>
+</html>
